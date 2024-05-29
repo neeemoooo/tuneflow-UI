@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tune Flow</title>
+</head>
+<body>
+    <header class="header" id="header-element">
+           <h1 class="app-title">tuneflow</h1>
+           <img src="assets/app_logo.png" alt="tuneflow logo a headset with a music not in the center of it" height="50" width="50">
+    </header> 
+
+    <section class="search" id="search-element">
+        <div class="search__search-bar-container">
+            <input type="text" autocomplete="music" id="music-searchbar" class="search-container__search" placeholder="search music"> 
+            <label for="music-searchbar" aria-hidden="true" class="search-container__search-icon">
+                <img src="./assets/icons/search_icon.svg" alt="" class="search-icon__image">
+            </label>
+        </div>
+    </section>
+
+    <main class="music-genre" id="music-genre-element">
+        <section class="music-genre__category">
+            <div class="music-genre__category__separator">
+                <p class="separator__name">Rock</p>
+            </div>
+
+            <div class="music-genre__music-list">
+
+                <div class="music-list__music">
+                    <button type="button" class="music__info">
+                        <img src="https://designcuts.b-cdn.net/wp-content/uploads/2016/03/music-record-cover.jpg" alt="" class="music__info__cover" height="100" width="100">
+                        <p class="music__info__song-name">song name</p>
+                    </button>
+                </div>
+
+                <div class="music-list__music">
+                    <button type="button" class="music__info">
+                        <img src="https://designcuts.b-cdn.net/wp-content/uploads/2016/03/music-record-cover.jpg" alt="" class="music__info__cover" height="100" width="100">
+                        <p class="music__info__song-name">song name</p>
+                    </button>
+                </div>
+
+                <div class="music-list__music">
+                    <button type="button" class="music__info">
+                        <img src="https://designcuts.b-cdn.net/wp-content/uploads/2016/03/music-record-cover.jpg" alt="" class="music__info__cover" height="100" width="100">
+                        <p class="music__info__song-name">song name</p>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="music-search-result music-search-result--hidden">
+
+        <div class="music-search-result__separator">
+            <p class="music-search-result__separator__name">search result</p>
+        </div>
+
+        <div class="search-result__results">
+
+            <div class="music-list__music"">
+                <button type="button" class="music__info">
+                    <img src="https://designcuts.b-cdn.net/wp-content/uploads/2016/03/music-record-cover.jpg" alt="" class="music__info__cover" height="100" width="100">
+                    <p class="music__info__song-name">song name</p>
+                </button>
+            </div>           
+
+        </div> 
+
+    </section>
+
+    <section class="music-player music-player--hidden" id="music-player-element">
+        <div class="music-player__back-page">
+            <button type="button" class="back-page__button" id="back-page-button-element">
+                <img src="assets/icons/back_icon.svg" alt="" height="16" width="22">
+            </button>
+        </div>
+
+        <div class="music-player__music">
+            <section class="music-player__cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsd-wC4Oyp7PGVkoNWZGJjm3D6NdC2X1jx8rAIeVjF9w&s" alt="" class="music-player__image">
+            </section>
+            <section class="music__details">
+                <div class="music__details__info">
+                    <h2 class="music__details__info__song-name">livin' on a prayer</h2>
+                    <p class="music__details__info__song-artist">Bon Jovi</p>
+                </div>
+
+                <div class="music__details__time">
+                    <input type="range" class="music__details__time__range">
+                    <div class="music__details__time__info">
+                        <p class="time__info__current">0:59</p>
+                        <p class="time__info__duration">4:09</p>
+                    </div>
+                </div>
+
+                <div class="music__controls">
+                    <button class="music__controls__btn music__controls__btn--prev">
+                        <img src="./assets/icons/prev_icon.svg" alt="">
+                    </button>
+                    <button class="music__controls__btn music__controls__btn--play">
+                        <img src="./assets/icons/play_icon.svg" alt="">
+                    </button>
+                    <button class="music__controls__btn music__controls__btn--next">
+                        <img src="./assets/icons/next_icon.svg" alt="">
+                    </button>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
